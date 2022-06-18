@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HOTEL BOOKING WEBSITE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "http://cdn.cnn.com/cnnnext/dam/assets/140127103345-peninsula-shanghai-deluxe-mock-up.jpg" type = "image/png">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div></div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+                <p>At Hotel Transylvania, we believe that quality time is about making everyday moments matter. Everything has been thought to enhance our guests’ life balance, sense of well being but also enjoyment. Whether through our intuitive & modern design or our large range of rewarding experiences, everyone can disconnect from a busy life or make time to connect with their family, friends or colleagues. This combination makes our hotel the perfect spot for travellers and locals to have a drink, a bite to eat, to work, play or just relax.</p>
+                <button type = "button" class = "head-btn">GET STARTED</button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#rooms">rooms</a></li>
+                <li><a href = "#customers">customers</a></li>
+            </ul>
+            <button class = "btn sign-up">sign up</button>
+            <button class = "btn log-in">log in</button>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>services</h2>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Enhanced cleaning</h2>
+                        <p>Enhanced cleaning of guest rooms.
+                            Commercial-grade disinfectant used to clean the property.
+                            Employees trained in COVID-19 cleaning procedures.
+                            Employees wear masks, face shields and/or gloves.
+                            Enhanced cleaning of common areas.
+                            Employees trained in thorough hand-washing.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Food drinks and pool</h2>
+                        <p>Restaurant and
+                            Bar,
+                            Table service,
+                            Buffet dinner,
+                            Room service,
+                            24-hour,
+                            Breakfast,
+                            extra charge,
+                            Breakfast buffet,
+                            Outdoor pool,,
+                            Adult-only pool,
+                            Wading pool.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Housekeeping</h2>
+                        <p>Cleaning guestrooms mid-stay and after departure.
+                            Making beds.
+                            Replacing dirty linens and towels.
+                            Restocking guestroom amenities like toiletries, drinking glasses, and notepads.
+                            Removing garbage, recycling, and room service trays.
+                            Picking up and returning valet laundry items.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Room Security</h2>
+                        <p>Access Control,
+                            Vehicle Security,
+                            Key Management,
+                            Video Surveillance,
+                            Building Identification and Accessibility.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Book Now">
+                </div>
+            </form>
+        </div>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>rooms</h2>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "https://q-xx.bstatic.com/xdata/images/hotel/840x460/106143936.jpg?k=865a44e1c246abe659f62392c69160baa91529b2845b8a84e3203195e16d7ef1&o=" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Superior Room</h3>
+                        
+                        <p>Our Deluxe Twin/Large Double also provides views over landscaped gardens. It has a seating area, digital safe and mini fridge. This room can be configured with either 2 single beds or zip and linked to provide a large double bed.</p>
+                       
+                        <p class = "rate">
+                            <span>$99.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "https://cf.bstatic.com/xdata/images/hotel/max1024x768/148362842.jpg?k=a5f9a1723e141d1fde0655704ac8ebcbb4b9ff659dd8540848b8dfff2e561c64&o=&hp=1" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Standard Room</h3>
+                        
+                        
+                        <p>The room is furnished with wall to wall carpeting, trendy furnishings and a balcony. Our ultramodern glass bathroom is equipped with hairdryer, magnifying shaving and make up mirror as well as all the amenities you could possible need during your stay.</p>
+                        <p class = "rate">
+                            <span>$99.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/80/2016/12/02015735/Sofitel-Mumbai-BKC-Club-Mill%C3%A9sime-Room.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Grand Superior Room</h3>
+                        
+                      
+                        <p>The Grand Superior Room comprises of a Queen Size Bed, 2 Bedside Tables, a Desk & Chair. This room is furnished with wall to wall carpeting, trendy furnishings and a large private Patio equipped with Patio Furniture and Sun Beds and offers a side sea view. Our ultramodern glass bathroom is equipped with hairdryer, magnifying shaving and make up mirror as well as all the amenities you could possible need during your stay.</p>
+                        <p class = "rate">
+                            <span>$99.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>customers</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>We Loved it</h3>
+                        <p>Came here for staycation and had a amazing time here. Pocket friendly yet luxury experience. Kids can have fun in kids pool, play area.!! Rooms are decent, may not luxurious, but economical and accommodating..! Pool is super clean and will be provided with towels and changing room.</p>
+                        <img src = "https://m.media-amazon.com/images/M/MV5BNmNlNGU0ZDgtMDg3MS00ZGZmLTg4ZjMtYjMyZjVmNzlhNWIwXkEyXkFqcGdeQXVyMTE1MTYxNDAw._V1_.jpg" alt = "customer image">
+                        <span>Keanu Reaves, USA</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Comfortable Living</h3>
+                        <p>Excellent place to stay. Hospitality is just awesome.. I was able to relate my stay at one of the best Hotels in USA. And it's exactly like that. However, the price that I paid is same as what I paid in USA. So, I feel that the cost is more</p>
+                        <img src = "https://i.insider.com/5d279e7521a8612bea6b22c6?width=1136&format=jpeg" alt = "customer image">
+                        <span>Mr.Vengeance, Gotham</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Nice Place</h3>
+                        <p>Had an excellent time in Hotel Transylvania. The staff is efficient, warm and courteous. The property is very well maintained. The food is excellent and the variety offered was a huge plus our kids liked the place very much. The pool is beautifully maintained. It's was a perfect weekend getaway for our family brunch or dinner.</p>
+                        <img src = "https://imageio.forbes.com/specials-images/dam/imageserve/1080529720/960x0.jpg?fit=bounds&format=jpg&width=960" alt = "customer image">
+                        <span>Kendall Jenner, USA</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>Follow Us On</h2>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+
+                </div>
+                <div>
+                    
+                </div>
+                <div> 
+
+                    <h2>Any Queries</h2>
+                    <div class = "contact-item ">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            203 Fake St.Mountain View, San Francisco, California, USA
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +84545 37534 48
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            info@domain.com
+                        </span>
+                    </div>
+
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="script.js"></script>
+    </body>
+</html>
